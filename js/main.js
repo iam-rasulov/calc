@@ -17,9 +17,9 @@ elForm.addEventListener("submit", function(event){
     var Span3 = 70;
     var Span4 = 800;
   
-    elSpan.textContent = Math.round(elInputVal / Span);
-    elSpan2.textContent = Math.round(elInputVal / Span2);
-    elSpan3.textContent = Math.round(elInputVal / Span3);
-    elSpan4.textContent = Math.round(elInputVal / Span4);
+    elSpan.textContent = (elInputVal / Span).toFixed(2);
+    elSpan2.textContent = (elInputVal / Span2).toFixed(2);
+    elSpan3.textContent = (elInputVal / Span3).toFixed(2);
+    elSpan4.textContent = (elInputVal / Span4).toFixed(2);
   
   });
