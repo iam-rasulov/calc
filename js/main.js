@@ -8,6 +8,9 @@ var elSpan4 = document.querySelector(".item__text__span4")
 
 
 
+
+
+
 elForm.addEventListener("submit", function(event){
     event.preventDefault();
   
@@ -16,10 +19,26 @@ elForm.addEventListener("submit", function(event){
     var Span2 = 20;
     var Span3 = 70;
     var Span4 = 800;
+
+    function people(){
+      return elInputVal / Span;
+    }
+    
+    function bicycle(){
+      return elInputVal / Span2;
+    }
+    
+    function car(){
+      return elInputVal / Span3;
+    }
+    
+    function plane(){
+      return elInputVal / Span4;
+    }
   
-    elSpan.textContent = (elInputVal / Span).toFixed(2);
-    elSpan2.textContent = (elInputVal / Span2).toFixed(2);
-    elSpan3.textContent = (elInputVal / Span3).toFixed(2);
-    elSpan4.textContent = (elInputVal / Span4).toFixed(2);
+    elSpan.textContent = people();
+    elSpan2.textContent = bicycle();
+    elSpan3.textContent = car();
+    elSpan4.textContent = plane();
   
   });
