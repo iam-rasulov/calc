@@ -20,7 +20,7 @@ elForm.addEventListener("submit", function(event){
     var Span3 = 70;
     var Span4 = 800;
 
-    function people(){
+    function man(){
       return elInputVal / Span;
     }
     
@@ -36,9 +36,9 @@ elForm.addEventListener("submit", function(event){
       return elInputVal / Span4;
     }
   
-    elSpan.textContent = people();
-    elSpan2.textContent = bicycle();
-    elSpan3.textContent = car();
-    elSpan4.textContent = plane();
+    elSpan.textContent = man().toFixed(2);
+    elSpan2.textContent = bicycle().toFixed(2);
+    elSpan3.textContent = car().toFixed(2);
+    elSpan4.textContent = plane().toFixed(2);
   
   });
