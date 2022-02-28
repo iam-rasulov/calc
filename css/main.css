@@ -30,10 +30,34 @@ body{
 .title {
     text-align: center;
 }
+
+.error{
+    width: 450px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    text-align: center;   
+}
+
+.result-error{
+    width: 450px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    text-align: center;
+    color: red;
+    border: 1px solid red;
+}
+
 .form {
     display: flex;
-    width: 330px;
+    width: 390px;
     margin: 0 auto;
+    margin-bottom: 30px;
     padding: 15px 0;
 }
 .form__text {

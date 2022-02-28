@@ -15,10 +15,38 @@ elForm.addEventListener("submit", function(event){
     event.preventDefault();
   
     var elInputVal = elInput.value;
+    var elError = document.querySelector(".error")
     var Span = 3.6;
     var Span2 = 20;
     var Span3 = 70;
     var Span4 = 800;
+
+
+  if(elInputVal <= 0 || isNaN(elInputVal)){
+
+    elError.textContent =
+    "Iltimos 0  dan katta raqam kiriting , yokida son kiriting" ;
+
+    elError.classList.add("result-error");
+    elError.classList.remove("result-success");
+
+
+  }
+  else{
+
+    elError.textContent = "";
+
+    elError.classList.remove("result-error");
+    elError.classList.add("result-success");
+  }
+
+
+
+ 
+
+  
+
+
 
     function man(){
       return elInputVal / Span;
@@ -35,6 +63,16 @@ elForm.addEventListener("submit", function(event){
     function plane(){
       return elInputVal / Span4;
     }
+
+
+
+    
+
+    
+  
+
+
+
   
     elSpan.textContent = man().toFixed(2);
     elSpan2.textContent = bicycle().toFixed(2);
