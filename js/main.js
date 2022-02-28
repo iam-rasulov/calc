@@ -48,35 +48,54 @@ elForm.addEventListener("submit", function(event){
 
 
 
-    function man(){
-      return elInputVal / Span;
-    }
+    // function man(){
+    //   return elInputVal / Span;
+    // }
     
-    function bicycle(){
-      return elInputVal / Span2;
-    }
+    // function bicycle(){
+    //   return elInputVal / Span2;
+    // }
     
-    function car(){
-      return elInputVal / Span3;
-    }
+    // function car(){
+    //   return elInputVal / Span3;
+    // }
     
-    function plane(){
-      return elInputVal / Span4;
-    }
+    // function plane(){
+    //   return elInputVal / Span4;
+    // }
 
 
 
     
-
+  function calculateTime(distance, speed) {
+  var hour = Math.floor(elInputVal / Span);
+  var minute = Math.floor((elInputVal / Span - hour) * 60);
+  return hour + ' soat ' + minute + ' minut ';
+  }
+  function calculateTime2(distance, speed) {
+    var hour = Math.floor(elInputVal / Span2);
+    var minute = Math.floor((elInputVal / Span2 - hour) * 60);
+    return hour + ' soat ' + minute + ' minut ';
+    }
+    function calculateTime3(distance, speed) {
+      var hour = Math.floor(elInputVal / Span3);
+      var minute = Math.floor((elInputVal / Span3 - hour) * 60);
+      return hour + ' soat ' + minute + ' minut ';
+      }
+      function calculateTime4(distance, speed) {
+        var hour = Math.floor(elInputVal / Span4);
+        var minute = Math.floor((elInputVal / Span4 - hour) * 60);
+        return hour + ' soat ' + minute + ' minut ';
+        }
     
   
 
 
 
   
-    elSpan.textContent = man().toFixed(2);
-    elSpan2.textContent = bicycle().toFixed(2);
-    elSpan3.textContent = car().toFixed(2);
-    elSpan4.textContent = plane().toFixed(2);
+    elSpan.textContent = calculateTime();
+    elSpan2.textContent = calculateTime2();
+    elSpan3.textContent = calculateTime3();
+    elSpan4.textContent = calculateTime4();
   
   });
